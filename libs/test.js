@@ -7,7 +7,7 @@ export default {
     let startAt = Date.now()
     const value = isFunction(valueOrFn) ? await valueOrFn() : valueOrFn
     let duration = Date.now() - startAt
-    const tooSlow = duration > [null, 0, 2500][question]
+    const tooSlow = duration > [null, 50, 2500][question]
     const isRight = [
       null,
       () => isEqual(value, {
